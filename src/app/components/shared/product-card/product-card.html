@@ -3,7 +3,7 @@
     class="bg-white rounded-sm border border-stone-100 hover:border-green-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col group">
 
     <!-- Image -->
-    <div class="relative aspect-[4/3] bg-green-50 overflow-hidden">
+    <div class="relative aspect-4/3 bg-green-50 overflow-hidden">
         @if (fly.imageUrl) {
         <img [src]="fly.imageUrl" [alt]="fly.name"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -41,7 +41,7 @@
         </div>
 
         <!-- Price -->
-        <p class="font-bold text-green-800 text-sm">KES {{ fly.price | number }}</p>
+        <p class="font-bold text-green-800 text-sm">$ {{ fly.price | number }}</p>
 
         <!-- Buttons -->
         <div class="flex gap-1.5 pt-1 border-t border-stone-50">

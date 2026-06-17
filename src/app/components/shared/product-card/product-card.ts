@@ -19,7 +19,7 @@ export class ProductCard {
 
   ngOnInit(): void {
     const message = encodeURIComponent(
-      `Hi! I'd like to order the *${this.fly.name}* (${this.fly.category}, Hook #${this.fly.hookSize}) — KES ${this.fly.price}. Is it available?`,
+      `Hi! I'd like to order the *${this.fly.name}* (${this.fly.category}, Hook #${this.fly.hookSize}) — $ ${this.fly.price}. Is it available?`,
     );
     this.whatsappUrl = `https://wa.me/${this.whatsappNumber}?text=${message}`;
   }
